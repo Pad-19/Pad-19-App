@@ -1,6 +1,6 @@
-import TipSplitterController from './tip-splitter.controller'
+import MainController from './main.controller'
 
-export const TipSplitterComponent = {
-    template: require('./tip-splitter.tpl.html'),
-    controller: TipSplitterController,
+export const MainComponent = {
+    template: require('./main.tpl.html'),
+    controller: MainController,
 }

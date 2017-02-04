@@ -1,9 +1,7 @@
 import angular from 'angular';
-import { TipSplitterComponent } from './tip-splitter.component'
-import { TipSplitterService } from './tip-splitter.service'
+import { MainComponent } from './main.component'
 
-export const TipSplitterModule = angular
-    .module('tipSplitter', [])
-    .component('tipSplitter', TipSplitterComponent)
-    .service('TipSplitterService', TipSplitterService)
+export const MainModule = angular
+    .module('main', [])
+    .component('main', MainComponent)
     .name
