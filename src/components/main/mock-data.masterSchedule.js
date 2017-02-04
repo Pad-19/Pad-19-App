@@ -1,8 +1,8 @@
-export const masterSchedule[
+export const masterSchedule = [
     {
-        sessionId: 001,
+        sessionId: 1,
         sessionPeriod: 0,
-        sessionType: 'keynote'
+        sessionType: 'keynote',
         sessionName: 'Keynote',
         sessionSubject: '',
         sessionBuilding: 'LaSells',
@@ -13,7 +13,7 @@ export const masterSchedule[
     {
         sessionId: 101,
         sessionPeriod: 1,
-        sessionType: 'interview'
+        sessionType: 'interview',
         sessionName: 'Mock Interviews',
         sessionSubject: 'Mock Interviews',
         sessionBuilding: 'Alumni Ctr.',
@@ -24,7 +24,7 @@ export const masterSchedule[
     {
         sessionId: 102,
         sessionPeriod: 1,
-        sessionType: 'booths'
+        sessionType: 'booths',
         sessionName: 'Visit Booths',
         sessionSubject: 'Visit Booths',
         sessionBuilding: 'Both Buildings',
@@ -35,7 +35,7 @@ export const masterSchedule[
     {
         sessionId: 105,
         sessionPeriod: 1,
-        sessionType: 'breakout'
+        sessionType: 'breakout',
         sessionName: 'Engineering',
         sessionSubject: 'Engineering',
         sessionBuilding: 'LaSells',
@@ -46,7 +46,7 @@ export const masterSchedule[
     {
         sessionId: 106,
         sessionPeriod: 1,
-        sessionType: 'breakout'
+        sessionType: 'breakout',
         sessionName: 'Farming/Fishing/Forestry',
         sessionSubject: 'Farming/Fishing/Forestry',
         sessionBuilding: 'Alumni Ctr.',
@@ -57,7 +57,7 @@ export const masterSchedule[
     {
         sessionId: 107,
         sessionPeriod: 1,
-        sessionType: 'breakout'
+        sessionType: 'breakout',
         sessionName: 'Fashion & Entertainment',
         sessionSubject: 'Fashion & Entertainment',
         sessionBuilding: 'Alumni Ctr.',
@@ -68,7 +68,7 @@ export const masterSchedule[
     {
         sessionId: 108,
         sessionPeriod: 1,
-        sessionType: 'breakout'
+        sessionType: 'breakout',
         sessionName: 'Forensics',
         sessionSubject: 'Forensics',
         sessionBuilding: 'LaSells',
@@ -79,7 +79,7 @@ export const masterSchedule[
     {
         sessionId: 109,
         sessionPeriod: 1,
-        sessionType: 'breakout'
+        sessionType: 'breakout',
         sessionName: 'Health Occupations',
         sessionSubject: 'Health Occupations',
         sessionBuilding: 'LaSells',
@@ -90,7 +90,7 @@ export const masterSchedule[
     {
         sessionId: 110,
         sessionPeriod: 1,
-        sessionType: 'breakout'
+        sessionType: 'breakout',
         sessionName: 'Installation, Maintenance & Repair',
         sessionSubject: 'Installation, Maintenance & Repair',
         sessionBuilding: 'Alumni Ctr.',
@@ -101,7 +101,7 @@ export const masterSchedule[
     {
         sessionId: 111,
         sessionPeriod: 1,
-        sessionType: 'breakout'
+        sessionType: 'breakout',
         sessionName: 'Science/Chemists/Physics',
         sessionSubject: 'Science/Chemists/Physics',
         sessionBuilding: 'LaSells',
@@ -112,7 +112,7 @@ export const masterSchedule[
     {
         sessionId: 112,
         sessionPeriod: 1,
-        sessionType: 'breakout'
+        sessionType: 'breakout',
         sessionName: 'Office & Administrative Support',
         sessionSubject: 'Office & Administrative Support',
         sessionBuilding: 'Alumni Ctr.',
@@ -123,7 +123,7 @@ export const masterSchedule[
     {
         sessionId: 113,
         sessionPeriod: 1,
-        sessionType: 'breakout'
+        sessionType: 'breakout',
         sessionName: 'Engineering',
         sessionSubject: 'Engineering',
         sessionBuilding: 'LaSells',
@@ -134,7 +134,7 @@ export const masterSchedule[
     {
         sessionId: 114,
         sessionPeriod: 1,
-        sessionType: 'breakout'
+        sessionType: 'breakout',
         sessionName: 'Sales',
         sessionSubject: 'Sales',
         sessionBuilding: 'Alumni Ctr.',
@@ -145,7 +145,7 @@ export const masterSchedule[
     {
         sessionId: 201,
         sessionPeriod: 2,
-        sessionType: 'interview'
+        sessionType: 'interview',
         sessionName: 'Mock Interviews',
         sessionSubject: 'Mock Interviews',
         sessionBuilding: 'Alumni Ctr.',
@@ -156,7 +156,7 @@ export const masterSchedule[
     {
         sessionId: 202,
         sessionPeriod: 2,
-        sessionType: 'booths'
+        sessionType: 'booths',
         sessionName: 'Visit Booths',
         sessionSubject: 'Visit Booths',
         sessionBuilding: 'Both Buildings',
@@ -167,7 +167,7 @@ export const masterSchedule[
     {
         sessionId: 205,
         sessionPeriod: 2,
-        sessionType: 'breakout'
+        sessionType: 'breakout',
         sessionName: 'Engineering',
         sessionSubject: 'Engineering',
         sessionBuilding: 'LaSells',
@@ -178,7 +178,7 @@ export const masterSchedule[
     {
         sessionId: 206,
         sessionPeriod: 2,
-        sessionType: 'breakout'
+        sessionType: 'breakout',
         sessionName: 'Entrepreneurship',
         sessionSubject: 'Entrepreneurship',
         sessionBuilding: 'LaSells',
@@ -189,7 +189,7 @@ export const masterSchedule[
     {
         sessionId: 207,
         sessionPeriod: 2,
-        sessionType: 'breakout'
+        sessionType: 'breakout',
         sessionName: 'Farming/Fishing/Forestry',
         sessionSubject: 'Farming/Fishing/Forestry',
         sessionBuilding: 'Alumni Ctr.',
@@ -200,7 +200,7 @@ export const masterSchedule[
     {
         sessionId: 208,
         sessionPeriod: 2,
-        sessionType: 'breakout'
+        sessionType: 'breakout',
         sessionName: 'Fashion & Entertainment',
         sessionSubject: 'Fashion & Entertainment',
         sessionBuilding: 'Alumni Ctr.',
@@ -211,7 +211,7 @@ export const masterSchedule[
     {
         sessionId: 209,
         sessionPeriod: 2,
-        sessionType: 'breakout'
+        sessionType: 'breakout',
         sessionName: 'Health Occupations',
         sessionSubject: 'Health Occupations',
         sessionBuilding: 'LaSells',
@@ -222,7 +222,7 @@ export const masterSchedule[
     {
         sessionId: 210,
         sessionPeriod: 2,
-        sessionType: 'breakout'
+        sessionType: 'breakout',
         sessionName: 'Installation, Maintenance & Repair',
         sessionSubject: 'Installation, Maintenance & Repair',
         sessionBuilding: 'Alumni Ctr.',
@@ -233,7 +233,7 @@ export const masterSchedule[
     {
         sessionId: 211,
         sessionPeriod: 2,
-        sessionType: 'breakout'
+        sessionType: 'breakout',
         sessionName: 'Personal Care',
         sessionSubject: 'Personal Care',
         sessionBuilding: 'Alumni Ctr.',
@@ -244,7 +244,7 @@ export const masterSchedule[
     {
         sessionId: 212,
         sessionPeriod: 2,
-        sessionType: 'breakout'
+        sessionType: 'breakout',
         sessionName: 'Protective Services',
         sessionSubject: 'Protective Services',
         sessionBuilding: 'LaSells',
@@ -255,7 +255,7 @@ export const masterSchedule[
     {
         sessionId: 213,
         sessionPeriod: 2,
-        sessionType: 'breakout'
+        sessionType: 'breakout',
         sessionName: 'Sales',
         sessionSubject: 'Sales',
         sessionBuilding: 'Alumni Ctr.',
@@ -266,7 +266,7 @@ export const masterSchedule[
     {
         sessionId: 214,
         sessionPeriod: 2,
-        sessionType: 'breakout'
+        sessionType: 'breakout',
         sessionName: 'Social & Community Counseling',
         sessionSubject: 'Social & Community Counseling',
         sessionBuilding: 'LaSells',
@@ -277,7 +277,7 @@ export const masterSchedule[
     {
         sessionId: 301,
         sessionPeriod: 3,
-        sessionType: 'interview'
+        sessionType: 'interview',
         sessionName: 'Mock Interviews',
         sessionSubject: 'Mock Interviews',
         sessionBuilding: 'Alumni Ctr.',
@@ -288,7 +288,7 @@ export const masterSchedule[
     {
         sessionId: 302,
         sessionPeriod: 3,
-        sessionType: 'booths'
+        sessionType: 'booths',
         sessionName: 'Visit Booths',
         sessionSubject: 'Visit Booths',
         sessionBuilding: 'Both Buildings',
@@ -299,7 +299,7 @@ export const masterSchedule[
     {
         sessionId: 305,
         sessionPeriod: 3,
-        sessionType: 'breakout'
+        sessionType: 'breakout',
         sessionName: 'Business & Finance',
         sessionSubject: 'Business & Finance',
         sessionBuilding: 'Alumni Ctr.',
@@ -310,7 +310,7 @@ export const masterSchedule[
     {
         sessionId: 306,
         sessionPeriod: 3,
-        sessionType: 'breakout'
+        sessionType: 'breakout',
         sessionName: 'Construction & Labor',
         sessionSubject: 'Construction & Labor',
         sessionBuilding: 'Alumni Ctr.',
@@ -321,7 +321,7 @@ export const masterSchedule[
     {
         sessionId: 307,
         sessionPeriod: 3,
-        sessionType: 'breakout'
+        sessionType: 'breakout',
         sessionName: 'Education',
         sessionSubject: 'Education',
         sessionBuilding: 'LaSells',
@@ -332,7 +332,7 @@ export const masterSchedule[
     {
         sessionId: 308,
         sessionPeriod: 3,
-        sessionType: 'breakout'
+        sessionType: 'breakout',
         sessionName: 'Foods & Event Planning',
         sessionSubject: 'Foods & Event Planning',
         sessionBuilding: 'LaSells',
@@ -343,7 +343,7 @@ export const masterSchedule[
     {
         sessionId: 309,
         sessionPeriod: 3,
-        sessionType: 'breakout'
+        sessionType: 'breakout',
         sessionName: 'Journalism/Writers/Languages',
         sessionSubject: 'Journalism/Writers/Languages',
         sessionBuilding: 'Alumni Ctr.',
@@ -354,7 +354,7 @@ export const masterSchedule[
     {
         sessionId: 310,
         sessionPeriod: 3,
-        sessionType: 'breakout'
+        sessionType: 'breakout',
         sessionName: 'Law',
         sessionSubject: 'Law',
         sessionBuilding: 'Alumni Ctr.',
@@ -365,7 +365,7 @@ export const masterSchedule[
     {
         sessionId: 311,
         sessionPeriod: 3,
-        sessionType: 'breakout'
+        sessionType: 'breakout',
         sessionName: 'Personal Care',
         sessionSubject: 'Personal Care',
         sessionBuilding: 'Alumni Ctr.',
@@ -376,7 +376,7 @@ export const masterSchedule[
     {
         sessionId: 312,
         sessionPeriod: 3,
-        sessionType: 'breakout'
+        sessionType: 'breakout',
         sessionName: 'Protective Services',
         sessionSubject: 'Protective Services',
         sessionBuilding: 'LaSells',
@@ -387,7 +387,7 @@ export const masterSchedule[
     {
         sessionId: 313,
         sessionPeriod: 3,
-        sessionType: 'breakout'
+        sessionType: 'breakout',
         sessionName: 'Social & Community Counseling',
         sessionSubject: 'Social & Community Counseling',
         sessionBuilding: 'LaSells',
@@ -398,7 +398,7 @@ export const masterSchedule[
     {
         sessionId: 401,
         sessionPeriod: 4,
-        sessionType: 'interview'
+        sessionType: 'interview',
         sessionName: 'Mock Interviews',
         sessionSubject: 'Mock Interviews',
         sessionBuilding: 'Alumni Ctr.',
@@ -409,7 +409,7 @@ export const masterSchedule[
     {
         sessionId: 402,
         sessionPeriod: 4,
-        sessionType: 'booths'
+        sessionType: 'booths',
         sessionName: 'Visit Booths',
         sessionSubject: 'Visit Booths',
         sessionBuilding: 'Both Buildings',
@@ -420,7 +420,7 @@ export const masterSchedule[
     {
         sessionId: 405,
         sessionPeriod: 4,
-        sessionType: 'breakout'
+        sessionType: 'breakout',
         sessionName: 'Arts',
         sessionSubject: 'Arts',
         sessionBuilding: 'LaSells',
@@ -431,7 +431,7 @@ export const masterSchedule[
     {
         sessionId: 406,
         sessionPeriod: 4,
-        sessionType: 'breakout'
+        sessionType: 'breakout',
         sessionName: 'Athletic Training & Coaching',
         sessionSubject: 'Athletic Training & Coaching',
         sessionBuilding: 'LaSells',
@@ -442,7 +442,7 @@ export const masterSchedule[
     {
         sessionId: 407,
         sessionPeriod: 4,
-        sessionType: 'breakout'
+        sessionType: 'breakout',
         sessionName: 'Computers & Math',
         sessionSubject: 'Computers & Math',
         sessionBuilding: 'Alumni Ctr.',
@@ -453,7 +453,7 @@ export const masterSchedule[
     {
         sessionId: 408,
         sessionPeriod: 4,
-        sessionType: 'breakout'
+        sessionType: 'breakout',
         sessionName: 'Education',
         sessionSubject: 'Education',
         sessionBuilding: 'LaSells',
@@ -464,7 +464,7 @@ export const masterSchedule[
     {
         sessionId: 409,
         sessionPeriod: 4,
-        sessionType: 'breakout'
+        sessionType: 'breakout',
         sessionName: 'Journalism/Writers/Languages',
         sessionSubject: 'Journalism/Writers/Languages',
         sessionBuilding: 'Alumni Ctr.',
@@ -475,7 +475,7 @@ export const masterSchedule[
     {
         sessionId: 410,
         sessionPeriod: 4,
-        sessionType: 'breakout'
+        sessionType: 'breakout',
         sessionName: 'Law',
         sessionSubject: 'Law',
         sessionBuilding: 'Alumni Ctr.',
@@ -486,7 +486,7 @@ export const masterSchedule[
     {
         sessionId: 411,
         sessionPeriod: 4,
-        sessionType: 'breakout'
+        sessionType: 'breakout',
         sessionName: 'Management',
         sessionSubject: 'Management',
         sessionBuilding: 'LaSells',
@@ -497,7 +497,7 @@ export const masterSchedule[
     {
         sessionId: 412,
         sessionPeriod: 4,
-        sessionType: 'breakout'
+        sessionType: 'breakout',
         sessionName: 'Military Services',
         sessionSubject: 'Military Services',
         sessionBuilding: 'LaSells',
@@ -508,7 +508,7 @@ export const masterSchedule[
     {
         sessionId: 413,
         sessionPeriod: 4,
-        sessionType: 'breakout'
+        sessionType: 'breakout',
         sessionName: 'Production & Manufacturing',
         sessionSubject: 'Production & Manufacturing',
         sessionBuilding: 'Alumni Ctr.',
@@ -519,7 +519,7 @@ export const masterSchedule[
     {
         sessionId: 414,
         sessionPeriod: 4,
-        sessionType: 'breakout'
+        sessionType: 'breakout',
         sessionName: 'Transportation & Material Moving',
         sessionSubject: 'Transportation & Material Moving',
         sessionBuilding: 'Alumni Ctr.',
@@ -530,7 +530,7 @@ export const masterSchedule[
     {
         sessionId: 501,
         sessionPeriod: 5,
-        sessionType: 'interview'
+        sessionType: 'interview',
         sessionName: 'Mock Interviews',
         sessionSubject: 'Mock Interviews',
         sessionBuilding: 'Alumni Ctr.',
@@ -541,7 +541,7 @@ export const masterSchedule[
     {
         sessionId: 502,
         sessionPeriod: 5,
-        sessionType: 'booths'
+        sessionType: 'booths',
         sessionName: 'Visit Booths',
         sessionSubject: 'Visit Booths',
         sessionBuilding: 'Both Buildings',
@@ -552,7 +552,7 @@ export const masterSchedule[
     {
         sessionId: 505,
         sessionPeriod: 5,
-        sessionType: 'breakout'
+        sessionType: 'breakout',
         sessionName: 'Animal Care',
         sessionSubject: 'Animal Care',
         sessionBuilding: 'LaSells',
@@ -563,7 +563,7 @@ export const masterSchedule[
     {
         sessionId: 506,
         sessionPeriod: 5,
-        sessionType: 'breakout'
+        sessionType: 'breakout',
         sessionName: 'Arts',
         sessionSubject: 'Arts',
         sessionBuilding: 'LaSells',
@@ -574,7 +574,7 @@ export const masterSchedule[
     {
         sessionId: 507,
         sessionPeriod: 5,
-        sessionType: 'breakout'
+        sessionType: 'breakout',
         sessionName: 'Business & Finance',
         sessionSubject: 'Business & Finance',
         sessionBuilding: 'Alumni Ctr.',
@@ -585,7 +585,7 @@ export const masterSchedule[
     {
         sessionId: 508,
         sessionPeriod: 5,
-        sessionType: 'breakout'
+        sessionType: 'breakout',
         sessionName: 'Computers & Math',
         sessionSubject: 'Computers & Math',
         sessionBuilding: 'Alumni Ctr.',
@@ -596,7 +596,7 @@ export const masterSchedule[
     {
         sessionId: 509,
         sessionPeriod: 5,
-        sessionType: 'breakout'
+        sessionType: 'breakout',
         sessionName: 'Social Sciences',
         sessionSubject: 'Social Sciences',
         sessionBuilding: 'LaSells',
@@ -607,7 +607,7 @@ export const masterSchedule[
     {
         sessionId: 510,
         sessionPeriod: 5,
-        sessionType: 'breakout'
+        sessionType: 'breakout',
         sessionName: 'Military Services',
         sessionSubject: 'Military Services',
         sessionBuilding: 'LaSells',
@@ -618,7 +618,7 @@ export const masterSchedule[
     {
         sessionId: 511,
         sessionPeriod: 5,
-        sessionType: 'breakout'
+        sessionType: 'breakout',
         sessionName: 'Physical Sciences & Environment',
         sessionSubject: 'Physical Sciences & Environment',
         sessionBuilding: 'LaSells',
@@ -629,7 +629,7 @@ export const masterSchedule[
     {
         sessionId: 512,
         sessionPeriod: 5,
-        sessionType: 'breakout'
+        sessionType: 'breakout',
         sessionName: 'Production & Manufacturing',
         sessionSubject: 'Production & Manufacturing',
         sessionBuilding: 'Alumni Ctr.',
@@ -640,7 +640,7 @@ export const masterSchedule[
     {
         sessionId: 513,
         sessionPeriod: 5,
-        sessionType: 'breakout'
+        sessionType: 'breakout',
         sessionName: 'Social Sciences',
         sessionSubject: 'Social Sciences',
         sessionBuilding: 'LaSells',
@@ -651,7 +651,7 @@ export const masterSchedule[
     {
         sessionId: 514,
         sessionPeriod: 5,
-        sessionType: 'breakout'
+        sessionType: 'breakout',
         sessionName: 'Transportation & Material Moving',
         sessionSubject: 'Transportation & Material Moving',
         sessionBuilding: 'Alumni Ctr.',
