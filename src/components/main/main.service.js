@@ -1,8 +1,9 @@
 const masterSchedule = require('./mock-data.masterSchedule')
+const studentResults = require('./mock-data.studentsResults')
 
 export class MainService {
-    getStudents() {
-        alert('students')
+    getStudentResults() {
+        return studentResults
     }
 
     getMasterSchedule() {
