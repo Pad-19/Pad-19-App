@@ -1,11 +1,17 @@
 export default class MainController {
-    constructor() {
+    constructor(MainService) {
         'ngInject'
+
+        this.MainService = MainService
+        this.masterSchedule = MainService.getMasterSchedule()
 
     }
 
     createSchedules() {
-        alert('hi!')
+        console.log(this.masterSchedule)
+
+
+
     }
 
 }
