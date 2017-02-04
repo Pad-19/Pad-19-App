@@ -1,6 +1,6 @@
 export const masterSchedule = [
     {
-        sessionId: 1,
+        sessionId: 0,
         sessionPeriod: 0,
         sessionType: 'keynote',
         sessionName: 'Keynote',
