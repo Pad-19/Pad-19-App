@@ -47,6 +47,12 @@ function getRandomNumber(max) {
     return Math.floor(Math.random() * max)
 }
 
+function getThankYouSession(sessionsArray) {
+    let cleanArray = _.filter(sessionsArray, {'sessionType': 'breakout'})
+    let random = getRandomNumber(cleanArray.length)
+    return cleanArray[random]
+}
+
 function getRandomAvailableSession(masterSchedule, studentSessions) {
     let count = masterSchedule.length
     let foundSession = false
@@ -124,7 +130,12 @@ function updateMockInterviewsCount(currentCount, mockCount) {
 }
 
 
+function cleanStudentObject(student) {
+    let newStudent = student
 
+    newStudent.sessions = _.sortBy(newStudent.sessions, ['sessionPeriod'])
+    return newStudent
+}
 
 
 
@@ -136,6 +147,9 @@ export default class MainController {
         this.MainService = MainService
         this.masterSchedule = MainService.getMasterSchedule().masterSchedule
         this.studentResults = MainService.getStudentResults().studentResults
+
+        this.master = 'test'
+        this.student = 'test'
     }
 
     createSchedules() {
@@ -280,12 +294,16 @@ export default class MainController {
                 addRandomSession()
             }
 
+            student.thankYou = getThankYouSession(student.sessions)
+            // console.log(getThankYouSession(student.sessions));
+            student = cleanStudentObject(student)
+
         }
-        // End Student for-loop
-        // let foo = findLowAttendanceSessions(masterSchedule)
-        // console.log(foo);
         console.log(masterSchedule)
         console.log(masterStudentList)
+
+        this.student = JSON.stringify(masterStudentList)
+        this.master = JSON.stringify(masterSchedule)
     }
 
 }
