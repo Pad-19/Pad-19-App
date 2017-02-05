@@ -201,7 +201,20 @@ export default class MainController {
                 )
             }
 
-            
+            for (let g = 0; g < booths.length; g++) {
+                let nextAvailablePeriod = isSessionAvailable(
+                    booths[g].sessionPeriod,
+                    student.sessions
+                )
+                if (nextAvailablePeriod) {
+                    student.sessions.push(booths[g])
+                    masterSchedule = addStudentToSession(
+                        masterSchedule,
+                        booths[g].sessionId
+                    )
+                    break
+                }
+            }
         }
         // End Student for-loop
 
