@@ -180,7 +180,7 @@ export default class MainController {
             }
 
             // Add their third choice if it's available
-            let thirdChoice = student.survey.choice2
+            let thirdChoice = student.survey.choice3
             let thirdChoiceSessions = _.filter(masterSchedule, {'sessionSubject': thirdChoice})
 
             let chosenThirdChoice = returnLowestAttendance(thirdChoiceSessions)
