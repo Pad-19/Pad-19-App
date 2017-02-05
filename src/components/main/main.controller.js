@@ -43,14 +43,44 @@ function returnLowestAttendance(sessionsArray) {
     return session
 }
 
-function findLowAttendanceSessions(sessionsArray) {
-    let attendance = []
-    for (var i = 0; i < sessionsArray.length; i++) {
-        attendance.push(sessionsArray[i].sessionAttendance)
+function getRandomNumber(max) {
+    return Math.floor(Math.random() * max)
+}
+
+function getRandomAvailableSession(masterSchedule, studentSessions) {
+    let count = masterSchedule.length
+    let foundSession = false
+    let maxTries = count
+    let tries = 0
+
+    function findOne() {
+        tries++
+        let randomNumber = getRandomNumber(count)
+        let thisSession = masterSchedule[randomNumber]
+
+        let isOpen = isThereRoom(
+            masterSchedule,
+            thisSession.sessionId
+        )
+        let isAvailable = isSessionAvailable(
+            thisSession.sessionPeriod,
+            studentSessions
+        )
+
+        let isBooth = thisSession.sessionType === 'booths'
+        let isInterview = thisSession.sessionType === 'interview'
+
+        if (isOpen && isAvailable && !isBooth && !isInterview) {
+            foundSession = masterSchedule[randomNumber]
+            return
+        }
+        findOne()
     }
-    let lowest = _.min(attendance)
-    let session = _.filter(sessionsArray, {'sessionAttendance': lowest})
-    return session
+
+    if (!foundSession && tries < maxTries ) {
+        findOne()
+    }
+    return foundSession
 }
 
 function returnKeynotes(masterSchedule) {
@@ -228,10 +258,33 @@ export default class MainController {
                     break
                 }
             }
+
+            function addRandomSession() {
+                let randomSession = getRandomAvailableSession(masterSchedule, student.sessions)
+                student.sessions.push(randomSession)
+                masterSchedule = addStudentToSession(
+                    masterSchedule,
+                    randomSession.sessionId
+                )
+            }
+
+            if (student.sessions.length < 6) {
+                addRandomSession()
+            }
+
+            if (student.sessions.length < 6) {
+                addRandomSession()
+            }
+
+            if (student.sessions.length < 6) {
+                addRandomSession()
+            }
+
         }
         // End Student for-loop
-
-        // console.log(masterSchedule)
+        // let foo = findLowAttendanceSessions(masterSchedule)
+        // console.log(foo);
+        console.log(masterSchedule)
         console.log(masterStudentList)
     }
 
