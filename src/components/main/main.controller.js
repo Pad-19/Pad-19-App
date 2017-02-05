@@ -40,6 +40,16 @@ function returnLowestAttendance(sessionsArray) {
     return session
 }
 
+function findLowAttendanceSessions(sessionsArray) {
+    let attendance = []
+    for (var i = 0; i < sessionsArray.length; i++) {
+        attendance.push(sessionsArray[i].sessionAttendance)
+    }
+    let lowest = _.min(attendance)
+    let session = _.filter(sessionsArray, {'sessionAttendance': lowest})
+    return session
+}
+
 function returnKeynotes(masterSchedule) {
     let keynotes = []
     for (var i = 0; i < masterSchedule.length; i++) {
