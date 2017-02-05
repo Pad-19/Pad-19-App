@@ -1,3 +1,5 @@
 node_modules
 build
 src/components/main/mock-data.studentsResults.js
+
+src/components/schedule_generator/mock-students.js
