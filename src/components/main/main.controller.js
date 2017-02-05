@@ -13,19 +13,31 @@ function isThereRoom (
 ) {
 
     let session = _.find(masterSchedule, { 'sessionId': sessionId })
-    let sessionCurrentCount = session.sessionAttendance.length
+    let sessionCurrentCount = session.sessionAttendance
     let sessionMax = session.sessionCapacity + overBooking
-
-    return sessionCurrentCount < sessionMax
+    return sessionCurrentCount <= sessionMax
 }
 
 function isSessionAvailable(
     sessionPeriod,
     studentSessions
 ) {
-    let available = _.find(studentSessions, { 'sessionPeriod': sessionId }
+    let sessionFound = _.find(studentSessions, { 'sessionPeriod': sessionPeriod })
+    if (!sessionFound) {
+        return true
+    } else {
+        return false
+    }
+}
 
-    return available != -1
+function returnLowestAttendance(sessionsArray) {
+    let attendance = []
+    for (var i = 0; i < sessionsArray.length; i++) {
+        attendance.push(sessionsArray[i].sessionAttendance)
+    }
+    let lowest = _.min(attendance)
+    let session = _.find(sessionsArray, {'sessionAttendance': lowest})
+    return session
 }
 
 function returnKeynotes(masterSchedule) {
@@ -124,11 +136,76 @@ export default class MainController {
 
 
             // Add their first choice if it's available
-            let session = _.find(masterSchedule, { 'sessionId': sessionId })
+            let firstChoice = student.survey.choice1
+            let firstChoiceSessions = _.filter(masterSchedule, {'sessionSubject': firstChoice})
 
+            let chosenFirstChoice = returnLowestAttendance(firstChoiceSessions)
+            let isFirstChoiceOpen = isThereRoom(
+                masterSchedule,
+                chosenFirstChoice.sessionId
+            )
+            let isFirstChoiceAvailable = isSessionAvailable(
+                chosenFirstChoice.sessionPeriod,
+                student.sessions
+            )
+            // See if their first choice can be added
+            if (isFirstChoiceOpen && isFirstChoiceAvailable) {
+                student.sessions.push(chosenFirstChoice)
+                masterSchedule = addStudentToSession(
+                    masterSchedule,
+                    chosenFirstChoice.sessionId
+                )
+            }
 
+            // Add their second choice if it's available
+            let secondChoice = student.survey.choice2
+            let secondChoiceSessions = _.filter(masterSchedule, {'sessionSubject': secondChoice})
+
+            let chosenSecondChoice = returnLowestAttendance(secondChoiceSessions)
+            let isSecondChoiceOpen = isThereRoom(
+                masterSchedule,
+                chosenSecondChoice.sessionId
+            )
+            let isSecondChoiceAvailable = isSessionAvailable(
+                chosenSecondChoice.sessionPeriod,
+                student.sessions
+            )
+            // See if their first choice can be added
+            if (isSecondChoiceOpen && isSecondChoiceAvailable) {
+                student.sessions.push(chosenSecondChoice)
+                masterSchedule = addStudentToSession(
+                    masterSchedule,
+                    chosenSecondChoice.sessionId
+                )
+            }
+
+            // Add their third choice if it's available
+            let thirdChoice = student.survey.choice2
+            let thirdChoiceSessions = _.filter(masterSchedule, {'sessionSubject': thirdChoice})
+
+            let chosenThirdChoice = returnLowestAttendance(thirdChoiceSessions)
+            let isThirdChoiceOpen = isThereRoom(
+                masterSchedule,
+                chosenThirdChoice.sessionId
+            )
+            let isThirdChoiceAvailable = isSessionAvailable(
+                chosenThirdChoice.sessionPeriod,
+                student.sessions
+            )
+            // See if their first choice can be added
+            if (isThirdChoiceOpen && isThirdChoiceAvailable) {
+                student.sessions.push(chosenThirdChoice)
+                masterSchedule = addStudentToSession(
+                    masterSchedule,
+                    chosenThirdChoice.sessionId
+                )
+            }
+
+            
         }
-        console.log(masterSchedule)
+        // End Student for-loop
+
+        // console.log(masterSchedule)
         console.log(masterStudentList)
     }
 
