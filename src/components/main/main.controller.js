@@ -9,7 +9,7 @@ function addStudentToSession(masterSchedule, sessionId) {
 function isThereRoom (
     masterSchedule,
     sessionId,
-    overBooking = 5
+    overBooking = 4
 ) {
 
     let session = _.find(masterSchedule, { 'sessionId': sessionId })
