@@ -1,6 +1,9 @@
 const _ = require('lodash')
 
-function addStudentToSession(masterSchedule, sessionId) {
+function addStudentToSession(
+    masterSchedule,
+    sessionId
+) {
     let sessionIndex = _.findIndex(masterSchedule, { 'sessionId': sessionId })
     masterSchedule[sessionIndex]['sessionAttendance']++
     return masterSchedule
