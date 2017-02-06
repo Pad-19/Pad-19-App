@@ -1,1 +1,147 @@
-<h1>{{ $ctrl.student.school }}</h1>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<style>
+    .Schedule {
+        width: 8in;
+        height: 5.15in;
+        margin-left: auto;
+        margin-right: auto;
+        overflow: hidden;
+        padding-top: 15px;
+    }
+
+    table {
+        text-align: center;
+    }
+    th {
+        text-align: center;
+    }
+</style>
+
+
+<div class="Schedule">
+    <h4 class="text-center">2017 Career Convention Passport</h4>
+    <h6 class="text-center">Tuesday, Feburary 21, 2017</h6>
+    <h5 class="text-center">{{ $ctrl.student.firstName }} {{ $ctrl.student.lastName }} | {{ $ctrl.student.school }}</h5>
+
+    <h4 class="text-center">Your Sessions</h4>
+
+    <table class="table table-condensed">
+        <tr class="active">
+            <th>Welcome</th>
+            <th>Session 1</th>
+            <th>Session 2</th>
+            <th>Session 3</th>
+            <th>Lunch</th>
+            <th>Session 4</th>
+            <th>Session 5</th>
+        </tr>
+
+        <tr>
+            <td>9:30</td>
+            <td>10:15</td>
+            <td>10:50</td>
+            <td>11:30</td>
+            <td>12:00</td>
+            <td>12:50</td>
+            <td>1:30</td>
+        </tr>
+
+        <tr>
+            <td>
+                {{ $ctrl.student.sessions[0].sessionName }}
+            </td>
+            <td>
+                {{ $ctrl.student.sessions[1].sessionName }}
+            </td>
+            <td>
+                {{ $ctrl.student.sessions[2].sessionName }}
+            </td>
+            <td>
+                {{ $ctrl.student.sessions[3].sessionName }}
+            </td>
+            <td>
+                Lunch and Keynote
+            </td>
+            <td>
+                {{ $ctrl.student.sessions[4].sessionName }}
+            </td>
+            <td>
+                {{ $ctrl.student.sessions[5].sessionName }}
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                {{ $ctrl.student.sessions[0].sessionBuilding }}
+            </td>
+            <td>
+                {{ $ctrl.student.sessions[1].sessionBuilding }}
+            </td>
+            <td>
+                {{ $ctrl.student.sessions[2].sessionBuilding }}
+            </td>
+            <td>
+                {{ $ctrl.student.sessions[3].sessionBuilding }}
+            </td>
+            <td>
+                {{ $ctrl.student.sessions[0].sessionBuilding }}
+            </td>
+            <td>
+                {{ $ctrl.student.sessions[4].sessionBuilding }}
+            </td>
+            <td>
+                {{ $ctrl.student.sessions[5].sessionBuilding }}
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                {{ $ctrl.student.sessions[0].sessionRoom }}
+            </td>
+            <td>
+                {{ $ctrl.student.sessions[1].sessionRoom }}
+            </td>
+            <td>
+                {{ $ctrl.student.sessions[2].sessionRoom }}
+            </td>
+            <td>
+                {{ $ctrl.student.sessions[3].sessionRoom }}
+            </td>
+            <td>
+                {{ $ctrl.student.sessions[0].sessionRoom }}
+            </td>
+            <td>
+                {{ $ctrl.student.sessions[4].sessionRoom }}
+            </td>
+            <td>
+                {{ $ctrl.student.sessions[5].sessionRoom }}
+            </td>
+        </tr>
+    </table>
+
+    <div class="ThankYou">
+        <div class="checkbox">
+            <label>
+                <input type="checkbox" name="" value="">
+                Get Mock Interviewer's Name and write them a thank you.
+            </label>
+        </div>
+        <div class="checkbox">
+            <label>
+                <input type="checkbox" name="" value="">
+                Write a thank you note to the speaker in the {{ $ctrl.student.thankYou.sessionName }} session.
+            </label>
+        </div>
+        <div class="checkbox">
+            <label>
+                <input type="checkbox" name="" value="">
+                Write a thank you to one of the booths you visited.
+            </label>
+        </div>
+    </div>
+    <div class="Closing">
+        <p>Buses leave at 2:15</p>
+    </div>
+</div>
